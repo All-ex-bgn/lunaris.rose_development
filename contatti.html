@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunaris.Rose_Development</title> 
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+<div class="container-full">
+
+<div class="nav_bar-1">
+   <a href="index.html" class="a_img" ><img src="logo_2/logo_2.png" id="logo_1" alt=""></a>
+
+
+<ul class="nav_bar-2"> 
+<a href="index.html" id="a_1">Home</a>
+<a href="chi_sono.html" id="a_1">Chi sono</a>
+<a href="i_miei_progetti.html" id="a_1">I miei progetti</a>
+<a href="contatti.html" id="a_1">Contatti</a>
+</ul>
+
+<!--menu hamburger-->
+<div class="hamburger-menu">
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a  href="index.html" id="a_1">Home</a></li>
+                <li><a href="chi_sono.html" id="a_1">Chi Sono</a></li>
+                <li><a href="i_miei_progetti.html" id="a_1">I miei progetti</a></li>
+                <li><a href="contatti.html" id="a_1">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+
+hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('active'); // Aggiunge o rimuove la classe 'active' al clic
+});
+
+    </script>
+
+</div>
+</nav>
+
+
+    <div class="container_2">    
+    <h1 class="h1_1">Lunaris.Rose_Development</h1>
+      <h2 class="h2_1" >Portfolio digitale</h2>
+      <p class="p_0">Junior Web Developer
+    </div>
+  </div>
+</div><!--chiusura container-full-->
+
+
+<!--=====================Codice delle 3 colonne===================-->
+<div class="container_1">
+  
+  
+  <div class="col-100"><!---La collona centrale--->
+
+  <div class="container_45">
+    <h2 class="h2_43">Contatti</h2>
+    <p id="p_43">Se stai cercando una persona motivata, appassionata e pronta a mettersi in gioco, sarei felice di discutere con te delle tue esigenze e di come posso contribuire ai tuoi progetti. Per qualsiasi domanda o chiarimento sul mio lavoro, non esitare a contattarmi. Sono sempre disponibile a confrontarmi su nuove opportunità e a dimostrare le mie competenze. Il mio obiettivo è offrire soluzioni di valore e crescere insieme al team con cui collaboro. Ogni proposta sarà valutata con attenzione e rispetto per le tue necessità. Scrivimi e sarò lieto di rispondere il prima possibile per approfondire la nostra conoscenza</p>
+  </div>
+  
+    <div class="video-container"><!--Codice del video e delle tre colonne-->
+      <video autoplay muted loop id="background-video">
+         <source src="video/video_2.mp4" type="video/mp4"><!--codice video-->
+      </video>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-box"><!--codice telefono-->
+            <h3 class="h3_33" >Telefono</h3>
+            <p class="p_33" >3442721529</p>
+            <img src="logo_2/logo_4.png" alt="Immagine Telefono"> <!--codice immagine-->
+        </div>
+        <div class="contact-box"><!--codice e-mail-->
+            <h3 class="h3_33" >Email</h3>
+            <p class="p_39">alexwebdev.it@gmail.com</p>
+            <img src="logo_2/logo_4.png" alt="Immagine Email"> <!--codice immagine-->
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3 id="h3_1" >Lunaris.Rose_Development</h3>
+           
+            <p class="footer-contact">
+                <span>Contact us:</span>
+                <a href="mailto:info@company.com">alexwebdev.it@gmail.com</a>
+            </p>
+        </div>
+    <div class="footer-center">
+            <p class="footer-links">
+                    <a class="a_10" href="index.html">Home</a> |
+                    <a href="chi_sono.html">Chi sono</a> |
+                    <a href="i_miei_progetti.html">I miei progetti</a> |
+                    <a href="contatti.html">Contatti</a>
+                
+            </p>
+        </div>
+    <div class="footer-right">
+                <p class="footer-company-name">© 2024 Lunaris.Rose_Development. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1166 @@
+/* ! Reset */
+body, html{ font-size: 16_3x; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; box-sizing: border-box;margin: 0;padding: 0;}
+:before,*:after{ box-sizing: border-box; }
+h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0;padding: 0;}
+ol,ul{list-style-position: inside;}
+small{line-height: 1rem;}
+img{height: auto; width: 100%;}
+a{text-decoration: none;}
+hr{border:none; border-bottom: 1px solid #ddd}
+
+/*============================================CSS HOME================================================*/
+
+/*---=====CSS header=====---*/
+
+.container-full{
+width: 100%;
+background: linear-gradient(to right, #000000,#FF0000);
+padding-bottom: 50px;
+}
+
+.container_2{
+max-width: 100%; /* Imposta la larghezza del container */
+margin-left: 20px;
+padding-bottom: 10px;
+
+}
+
+/*---CSS H1/P---*/
+.h1_1{
+color: #FFD700;
+margin-top: 50px;
+margin-bottom: 10px;
+font-family: 'Lora', serif; /* Imposta il font per i titoli */
+}
+
+.h2_1{
+ color: white;
+ margin-bottom: 10px;
+}
+
+.p_0{
+  color: white;
+}
+
+
+.nav_bar-1{
+display: flex;
+justify-content: space-between; /* Spaziatura automatica tra logo e menu */
+align-items: center; /* Allinea verticalmente gli elementi */
+max-width: 1300px;
+margin: 0 auto;
+padding: 0 5px;
+/*padding-top: 15px;*/
+}
+
+#logo_1{
+width: 35%;
+height: auto; 
+}
+
+.a_img{
+  margin: 0; /* Rimuove il margine dall'elemento link */
+  padding: 0; /* Rimuove il padding dall'elemento link */
+  display: inline-block; /* Assicura che il link si comporti come un blocco */
+}
+
+
+#a_1{
+  color: #000000; 
+margin-right: 15px;
+font-weight: 700;
+font-size: 20px;
+}
+
+#a_1:hover {
+color: rgb(255, 255, 253); /* Colore del link quando ci passi sopra con il mouse */
+}
+
+
+#a_1:last-child {
+margin-right: 0; /* Per evitare che l'ultimo link abbia spazio extra a destra */
+}
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
+
+  
+  .h1_1 {
+  font-size: 27px;
+  margin-top: 10px;
+  }
+  
+  .h2_1{
+    font-size: 25px;
+  }
+
+  #a_1{
+    color: #FFD700; 
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  }
+
+  .container-full{
+    width: 100%;
+    background: linear-gradient(to right, #000000,#FF0000);
+    padding-bottom: 10px;
+  }
+   
+}
+
+/*---=====css menu hamburger---=====*/
+
+.hamburger-menu {
+  position: relative;
+  
+}
+
+.hamburger {
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 6px auto;
+  background-color: #333; /* Colore delle barre */
+  transition: 0.4s;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Nasconde il menu a sinistra */
+  height: 100%;
+  width: 250px;
+  background-color: #fff; /* Colore di sfondo del menu */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease; /* Transizione fluida */
+  padding: 20px;
+  z-index: 9; /* Aggiungi il z-index per la sidebar */
+  background: linear-gradient(to right, #000000,#FF0000);
+  /*background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 0, 0, 0.6));/*sumatura trasparente*/
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #000000; /* Colore dei link */
+}
+
+.sidebar.active {
+  left: 0; /* Mostra il menu quando attivo */
+}
+
+
+/*---=====fine css menu hamburger---=====*/
+.nav_bar-2 {
+  display: block; /* Mostra il menu desktop di default */
+}
+
+/* Stili per il menu hamburger (mobile) */
+.hamburger-menu {
+  display: none; /* Nasconde l'hamburger di default */
+}
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 768px) {
+  .nav_bar-2 {
+      display: none; /* Nasconde il menu desktop su mobile */
+  }
+  
+  .hamburger-menu {
+      display: block; /* Mostra l'hamburger su mobile */
+  }
+}
+
+
+/* Stili per il menu normale (desktop) */
+#colonna-22 {
+  display: block; /* Mostra il menu desktop di default */
+}
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 768px) {
+  #colonna-22 {
+      display: none; /* Nasconde il menu desktop su mobile */
+  }
+}
+
+.container_presentazione_1 {
+  max-width: 100%; /* Larghezza massima per schermi grandi */
+  height: auto;
+  margin: 0 auto; /* Centra il container */
+  padding: 20px; /* Spaziatura interna */
+}
+
+#h1_2 {
+  font-size: 16px;
+  line-height: 1.2; /* Altezza della riga */
+  margin: 0 0; /* Margini verticali */
+}
+
+#p_3 {
+  font-size: 1.2em; /* Dimensione normale per il paragrafo */
+  line-height: 1.5; /* Altezza della riga */
+  margin: 10px 0; /* Margini verticali */
+}
+
+
+/* Media query per tablet e dispositivi più piccoli */
+@media (max-width: 768px) {
+  .container_presentazione_1 {
+      padding: 15px; /* Spaziatura interna ridotta */
+      
+  }
+
+  #h1_2 {
+      font-size: 20px;
+  }
+
+  #p_3 {
+      font-size: 1em;
+  }
+}
+
+/*---container astronomi (//1)---*/
+
+.main-container_111 {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  /*background-color: #005C99;*/
+ /* margin-top: 70px;*/
+  background-color: rgb(207, 206, 206);
+}
+
+#h1_99 {
+  font-family: 'Playfair Display', serif; /* Elegante, classico */
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  margin-top: 60px;
+  /*top: 50%;*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(80, 78, 78, 0.2); /* Bianco con trasparenza al 20% */
+}
+
+/* Media Query per smartphone */
+@media only screen and (max-width: 600px) {
+  #h1_99{
+      font-size: 90px;
+  }
+
+  .main-container_111{
+      width: 100%;
+      height: 120px;
+      
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+   #h1_99{
+       font-size: 150px;
+   }
+ 
+   .main-container_111{
+       width: 96%;
+       height: 150px;
+       margin-top: 10px;
+   }
+}
+
+#h1_99{
+  font-size: 100px;
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+  #h1_99{
+    font-size: 90px;
+    font-weight: 900;
+    position: absolute;
+    margin-bottom: 10px;
+  }
+}
+
+/*---CSS slide (//1)---*/
+ .sliding-container {
+  width: 100%; 
+  height: 170px; 
+  overflow: hidden; /* Nasconde le immagini fuori dal contenitore */
+}
+
+.slide-track {
+  display: flex; 
+  animation: scroll-left 3s linear infinite; 
+  width: calc(110%); 
+  height: 180px;
+}
+
+.slide-track img {
+  width: 20%; 
+  height: auto; 
+  flex-shrink: 0; 
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20%); 
+  }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+  .sliding-container {
+    overflow: hidden; 
+    width: 100%; 
+    height: 120px; 
+  }
+
+  .slide-track {
+    display: flex; 
+    animation: scroll-left 3s linear infinite; 
+    width: calc(150%);
+    height: 130px; 
+  }
+}
+
+
+/*---=====container rotondi=====---*/
+.round-container {
+  width: 80%;
+  height: 20%;
+  border-radius: 50%; 
+  overflow: hidden; 
+ /* border: 1px solid #121212; 
+  /*background-color: #ffffff;*/
+  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/
+  
+  }
+      
+  /* Stile per l'immagine all'interno del container */
+  .round-container img {
+  width: 90%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease; 
+  object-fit: cover; /* L'immagine copre tutto il contenitore senza deformarsi */
+
+  }
+
+  .cont-float5{
+    margin-bottom: 10px;
+  }
+
+.container_pianeti, #p_1{
+/*text-align: center;*/
+color: #8d0505;
+margin-top: 10px; 
+}
+
+
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+  .round-container {
+    width: 130px;
+    height: 150px;
+    margin-right: 15px;
+  }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .round-container {
+    width: 170px;
+    height: 170px;
+  
+  }
+}
+
+/*Computer*/
+@media only screen and (min-width: 1025px) {
+  .round-container {
+    width: 300px;
+    height: 350px;
+    
+  }
+}
+
+/*---=====container rotondi (smartphone)=====---*/
+
+
+@media only screen and (max-width: 767px) { /* Mostra i container solo su smartphone */
+  #cont-float5 {
+    display: block; /* Mostra i container */
+  }
+}
+
+
+@media only screen and (min-width: 768px) {/* Nasconde i container su tablet e desktop */
+  #cont-float5 {
+    display: none; /* Nasconde i container */
+  }
+}
+
+/*---=====container rotondi (tablet)=====---*/
+
+/* Mostra i container solo su tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #cont-float4 {
+    display: block; /* Mostra i container */
+  }
+}
+
+/* Nasconde i container su smartphone e desktop */
+@media only screen and (max-width: 767px), only screen and (min-width: 1025px) {
+  #cont-float4 {
+    display: none; /* Nasconde i container */
+  }
+}
+
+/*-----===================================CSS delle tre collone-----=====================================*/
+
+
+/* Stili per la colonna principale */
+.main-container {
+display: flex;
+justify-content: space-between;
+/*padding: 20px;*/
+margin: 5px;
+background-color: #ffffff;
+
+ 
+}
+
+/* Stili per le colonne interne */
+.colonna {
+flex: 1;
+margin: 0 10px;
+padding: 20px;
+background-color: #ddddd6;
+border: 1px solid #ddd;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+position: relative; /* Permette di usare top */
+top: -60px; /* Solleva ogni colonna di 20px sopra l'header */
+z-index: 1; /* Porta le colonne davanti all'header */
+}
+
+.colonna h2 {
+margin-top: 0;
+}
+
+/* Aggiungi un po' di spazio tra le colonne */
+.colonna-1, .colonna-2, .colonna-3 {
+margin-left: 0;
+
+}
+
+/*.colonna-3 {
+margin-right: 0;
+background-color: rgb(0, 0, 0);
+}*/
+
+
+.colonna-3 {
+margin-right: 0;
+background-color: rgb(0, 0, 0); /* Colore di sfondo iniziale */
+}
+
+/* Effetto hover per la terza colonna */
+.colonna-3 {
+position: relative;
+overflow: hidden; /* Nasconde l'effetto fuori dai bordi */
+}
+
+.colonna-3::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(90deg, rgba(255, 215, 0, 0.7), rgba(255, 215, 0, 0));
+transition: left 0.5s ease;
+z-index: 0; /* Mantenere sotto il contenuto della colonna */
+}
+
+.colonna-3:hover::before {
+left: 0;
+}
+
+.colonna-3:hover {
+color: white; /* Cambia il colore del testo per contrastare con il nuovo sfondo */
+z-index: 1; /* Porta il testo sopra il gradiente */
+}
+
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+  }
+
+  .colonna {
+      margin: 10px 0;
+  }
+}
+
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+.main-container {
+flex-direction: column;
+}
+
+.colonna {
+margin: 10px 0;
+}
+}
+
+
+
+
+/*---------=====CSS del video e delle tre colonne---------=====*/
+
+/* Stili per il video */
+#video_1{
+  max-width:  100%;
+  height: 500px; /* Altezza del video */
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#background-video_2 {
+  max-width: 90%;
+  height: auto;
+  margin-left: 15px;
+  object-fit: cover; /* Assicura che il video copra tutta la larghezza */
+  z-index: 0; /* Posiziona il video dietro le colonne */
+  margin-bottom: 10px;
+}
+
+
+/*=================================================CSS container da tre collone=====================================================*/
+.container_1{
+max-width: 100%;
+height: auto;
+display: flex;
+margin: 0 auto;
+    
+}
+  
+/*---CSS della colonna di destra---*/
+.left, :right{
+width: 600px;
+height: 100%;
+}
+  
+/*---CSS della colonna centrale---*/
+.center{
+width: 1000px;
+height: 100%;
+}
+  
+/*---CSS delle colonne*/
+.col{
+padding: 10px;
+border: 10px solid #000000;
+}
+  
+/*================================================CSS CHI SONO==============================================*/
+
+.container_presen{
+max-width: 100%;
+height: auto;
+
+
+}
+
+
+.container_presentazione_2, .container_presentazione_3, .container_presentazione_4, .container_presentazione_5{
+  margin-bottom: 30px;
+  margin-left: 20px;
+ 
+}
+
+.container_presentazione_2{
+  margin-top: 20px;
+}
+
+/*---=====media queri=====---*/
+@media only screen and (max-width: 767px) {
+  .container_presen {
+    
+    padding: 10px;
+  }
+
+  #h1_5 {
+    font-size: 20px;
+  }
+
+  #p_3 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container_presen {
+    padding: 15px;
+  }
+
+  #h1_5 {
+    font-size: 22px;
+  }
+
+  #p_3 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container_presen {
+   /* display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    gap: 30px;
+  }
+
+  .container_presentazione_2, 
+  .container_presentazione_3, 
+  .container_presentazione_4, 
+  .container_presentazione_5 {
+    max-width: 100%;
+  }
+
+  #h1_5 {
+    font-size: 26px;
+  }
+
+  #p_3 {
+    font-size: 16px;
+  }
+}
+
+/*================================================CSS CONTATTI==============================================*/
+.container_45{
+  width: 100%;
+  height: auto;
+
+}
+
+ #p_43{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.h2_43{
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/*---------=====CSS del video e delle tre colonne---------=====*/
+.video-container {
+  width: 80%;
+  height: 500px; 
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  
+}
+
+#background-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; 
+}
+
+.contact-section {
+  max-width: 100%;
+  height: auto;
+  position: relative; /* Necessario per sovrapporre le colonne sul video */
+  z-index: 1; /* Posiziona le colonne sopra il video */
+  display: flex; /* Dispone le colonne in linea */
+  justify-content: center; /* Centra le colonne */
+  margin-top: -120px; /* Sovrapposizione sopra il video */
+ 
+}
+
+.contact-box {
+  background-color: rgb(0, 0, 0); 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 20px; 
+  margin: 10px; 
+  width: 30%; 
+  height: 200px;
+  position: relative; 
+  overflow: hidden; /* Nasconde il contenuto che esce */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra */
+}
+
+.contact-box::before {
+  content: '';
+  position: absolute;
+  bottom: 100%; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 215, 0, 0.7), rgba(255, 215, 0, 0)); 
+  transition: bottom 0.5s ease; 
+  z-index: 0; 
+}
+
+.contact-box:hover::before {
+  bottom: 0; /* Porta il contenuto in alto quando si passa con il mouse */
+}
+
+.h3_33, .p_33, .p_39 {
+  color: rgb(255, 255, 255);
+  position: relative; 
+  z-index: 1; 
+  margin: 0 0 10px;
+  text-align: center; 
+  font-weight: bold; 
+}
+
+/* Stile dell'immagine */
+.contact-box img {
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: top 0.5s ease; 
+  z-index: 0; 
+}
+
+.contact-box:hover img {
+  top: 0; /* Porta l'immagine nella posizione originale quando si passa con il mouse */
+}
+
+/*---=====codice media queri=====---*/
+
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
+  .contact-section {
+    max-width: 100%;
+    justify-content: center; /* Centra le colonne */
+    margin-top: -365px; /* Sovrapposizione sopra il video */
+  }
+  .contact-box  {
+    height: 60px;
+    font-size: 14px; /* Dimensione del testo per smartphone */
+  }
+
+  .video-container {
+    width: 90%;
+    height: 500px; 
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+  }
+ 
+  .p_33{
+    font-size: 15px;
+  }
+
+  .p_39{
+   font-size: 10px;
+  }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-box {
+    flex: 1 1 45%; /* Due box per riga */
+    margin-top: -50px;
+    width: 200px;
+    height: 100px;
+  }
+}
+
+/* Computer */
+@media only screen and (min-width: 1025px) {
+  .contact-box {
+    width: 30%;
+    flex: 1 1 30%; /* Tre box per riga */
+  }
+
+  .contact-section {
+    width: 60%;
+    flex: 1 1 30%; /* Tre box per riga */
+    margin-left: 229px;
+  }
+
+  .video-container {
+    width: 80%;
+    height: 500px; 
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 200px;
+  }
+
+  #background-video {
+    width: 80%;
+    height: auto;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    z-index: 0; 
+  }
+  .h3_33{
+    font-size: 27;
+  }
+  .p_33{
+    font-size: 25px;
+  }
+
+  .p_39{
+   font-size: 25px;
+  } 
+}
+/*=========================================i_miei_progetti============================================*/
+
+.h1_10 {
+  font-size: 48px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.h1_90{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#p_90{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+
+
+/* Container principale */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permette di andare su più righe */
+  justify-content: center;
+  gap: 30px;
+ 
+  width: 100%; /* Limita la larghezza per un layout più compatto */
+  margin: auto;
+}
+
+/* Stile dei progetti */
+.project {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  flex: 1 1 calc(33.33% - 20px); /* Tre per riga con gap */
+  max-width: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay interno ai progetti */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(226, 225, 145, 0.5);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover .overlay {
+  background-color: rgba(168, 1, 1, 0.9); /* Verde acqua */
+}
+
+/* Titoli e descrizioni */
+.overlay .h2_33 {
+  color: black;
+  margin: 0;
+  
+}
+
+
+
+.overlay p {
+  color: black;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/*---=====media queri project=====---*/
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
+  .project {
+    width: 00px; /* Larghezza piena su smartphone */
+    height: 100px;
+  }
+
+  .h1_90{
+    font-size: 25px;
+  }
+
+  .h2_33{
+    font-size: 17px;
+  }
+  
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .project {
+    width: calc(50% - 10px); /* Due progetti per riga con gap */
+    width: 300px; /* Larghezza piena su smartphone */
+    height: 130px;
+  }
+}
+
+/* Computer */
+@media only screen and (min-width: 1025px) {
+  .project {
+    width: calc(33.33% - 13.33px); /* Tre progetti per riga con gap */
+  }
+}
+
+
+/*---=====CSS del slide 1=====---*/
+.home-container_111 {
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+
+/* Slider Styles */
+.slider-container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+  display: flex;
+  max-width: 100%;
+  animation: slide 15s infinite linear;
+}
+
+.slide {
+  max-width: 100%;
+  height: 100%; 
+  flex-shrink: 0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%; 
+  object-fit: cover; 
+  display: block;
+}
+
+
+/* Animazione delle slide */
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(0%); }
+  38% { transform: translateX(-100%); }
+  71% { transform: translateX(-100%); }
+  76% { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+  .home-container_111 {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .content, .slider-container {
+      max-width: 100%;
+      width: 100%;
+  }
+
+  .slider {
+      width: 300%;
+  }
+}
+
+#p_22{
+  margin-left: 8px;
+}
+
+/*---=========================================CSS Footer=============================================---*/
+footer {
+/*background: linear-gradient(to right, #000000, #727272, #dad9db);*/
+background: linear-gradient(to right, #000000,#FF0000);
+color: #fff;
+padding: 20px 0;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+flex: 1;
+padding: 0 15px;
+}
+
+.footer-left h3 {
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+
+
+.footer-contact {
+font-size: 14px;
+}
+
+.footer-contact a {
+color: #f9a825;
+text-decoration: none;
+}
+
+.footer-center .footer-links a {
+color: #fff;
+text-decoration: none;
+margin: 0 5px;
+}
+
+.footer-center .footer-links a:hover {
+text-decoration: underline;
+}
+
+.footer-right {
+text-align: right;
+}
+
+.footer-right .footer-company-name {
+font-size: 14px;
+}
+
+
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+  .footer-center {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-center{
+  width: 100%;
+}
+
+.footer-right {
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+.footer-links{
+  width: 100%;
+}
+ 
+}
+
+#h3_1{
+  color: #FFD700;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif; /* Imposta il font per i titoli */ 
+}
+
+#logo_2{
+  width: 30%;
+  height: auto;
+}
+
+
+
+/*--------------------CSS percentuali-------------------*/
+.col-10{width: 10%;}
+.col-20{width: 20%;}
+.col-30{width: 30%;}
+.col-33{width: 33.333333%;}
+.col-40{width: 40%;}
+.col-50{width: 50%;}
+.col-60{width: 60%;}
+.col-66{width: 66.666666%;}
+.col-70{width: 70%;}
+.col-80{width: 80%;}
+.col-90{width: 90%;}
+.col-100{width: 100%;}
+
+
